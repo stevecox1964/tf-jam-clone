@@ -1,16 +1,28 @@
 # tf-jam-clone
-Learn how to use Tensorflow inside Unity use C# code
-This project is a modified version of the original tf-jam project located at
+Learn how to use Tensorflow inside Unity using C# code
+This project was modified from the original tf-jam project located at
 https://github.com/abehaskins/tf-jam
 
-I was going to do a fork of the original but I made to many changes and wanted to upload my version.
-In my version we are not using Tensorflow.JS but an actual Keras model with TF backend
-The Original project has a great Jupyter Notebook showing what the model would do after training. 
+The original tf-jam project used Tensorflow.JS which I did not want to bother with.
 
-I modified the note book to save the Keras model after training. I also added batch scripts to train and
-re-deploy the model in order to better integrate the training, testing pipeline.
+In my version we are actualy building Keras model, training it to fit a simple linear model using data from
+a previsouly run Unity training session, then converting the model to a Tensorflow model type, and loading into
+a C# with the help of TensorflowSharp.
 
-This project uses a Tensorflow C# plug-in you need to download and import into the Unity project before things
+The Original project had a great Jupyter Notebook showing the model fiting the training data. I modified the note book to use Keras.
+
+I also added batch scripts to build/train/convert the Keras into Tensorflow format for better round trip integration with Unity.
+
+This project uses TensorflowSharp plug-in that you will need to download and import into the Unity project before things
 will run properly.
+
+Goto here: 
+https://github.com/llSourcell/Unity_ML_Agents/blob/master/docs/Using-TensorFlow-Sharp-in-Unity-(Experimental).md
+to get the Unity package, download the package and import into this project.
+Goto here:
+https://github.com/migueldeicaza/TensorFlowSharp 
+to check out the code
+
+
 
 
